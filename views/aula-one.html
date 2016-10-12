@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizarra</title>
+    <!-- Theme -->
+    <link href="../css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../fontello/css/specials-icons.css">
+  </head>
+
+  <body>
+    <!-- PIZARRA -->
+    <section class="container-fluid">
+      <div class="aula">
+        <div class="row">
+          <!-- CRONOMETRO -->
+          <div class="col-xs-12 col-sm-3 p0right">
+            <div class="timerkeeper">
+              <input class="timer paused" id="timer_0" name="timer[]" type="text" value="00:00:00">
+              <a href="#" class="btn-toggle-timer"><i class="fa fa-play-circle fa-lg"></i></a>
+            </div>
+          </div>
+
+          <!-- TOOLBAR -->
+          <div class="col-xs-12 col-sm-9 p0left">
+            <div class="tool-bar">
+              <ul>
+                <!-- ICON SHARE SCREEN -->              
+                <li class="share-screen">
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compartir Pantalla"><i class="fa icon-screen fa-lg"></i></a>
+                </li>
+                <!-- FIN ICON SHARE SCREEN -->
+
+                <li class="save">
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Guardar"><i class="fa fa-save fa-lg"></i></a>
+                </li>
+
+                <li class="clear">
+                  <a href="#" id="tool-clean" data-toggle="tooltip" data-placement="bottom" title="Limpiar pizarra"><i class="fa fa-file-o fa-lg"></i></a>
+                </li>
+
+                <li class="trash">
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Borrar selección"><i class="fa fa-trash-o fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Enviar detrás"><i class="fa fa-arrow-circle-down fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Traer al frente"><i class="fa fa-arrow-circle-up fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" id="tool-text" data-toggle="tooltip" data-placement="bottom" title="Texto"><i class="fa fa-i-cursor fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" id="tool-circle" data-toggle="tooltip" data-placement="bottom" title="Circulo"><i class="icon-circle fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linea curva"><i class="icon-curve fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linea recta"><i class="icon-rect-line fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Trazo libre"><i class="fa fa-paint-brush fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Borrar última accion"><i class="fa fa-eraser fa-lg"></i></a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Selector"><i class="fa fa-mouse-pointer fa-lg"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SIDEBAR -->
+          <div class="col-xs-12 col-sm-3 p0right">
+
+            <div class="minmaxCon"></div>
+
+            <!-- USUARIO UNO A UNO -->
+            <div class="one-user">
+              <div class="video-small">
+                <i class="fa fa-video-camera"></i>
+              </div>
+
+              <div class="user-item">
+                <img src="../img/hannah.jpg" data-toggle="tooltip" data-placement="right" title="Hannah Arendt" class="img-responsive" />
+              </div>
+
+              <div class="video-btn">
+                <a href="#" id="tool-video" data-target="#modal-1" class="mdlFire"><i class="fa fa-phone"></i></a>
+              </div>
+            </div>
+
+            <!-- CHAT USUARIOS -->
+            <div class="chat-ayudantee">
+              <div class="content-chat">
+                  <ul class="chat">                    
+                    <li class="left-chat">
+                      <span class="chat-img pull-left">
+                        <img src="../img/hannah.jpg" data-toggle="tooltip" data-placement="right" title="Hannah Arendt" width="32" />
+                      </span>
+
+                      <div class="chat-body">
+                        <p>
+                          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                          <small class=" text-muted">13 mins ago</small>
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="right-chat">
+                      <div class="chat-body">
+                        <p>
+                          Lorem ipsum sit amet.
+                          <small class="text-muted">12 mins ago</small>
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="left-chat">
+                      <span class="chat-img pull-left">
+                        <img src="../img/hannah.jpg" data-toggle="tooltip" data-placement="right" title="Hannah Arendt" width="32" />
+                      </span>
+
+                      <div class="chat-body">
+                        <p>
+                          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+                          <small class=" text-muted">13 mins ago</small>
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="right-chat">
+                      <div class="chat-body">
+                        <p>
+                          Sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          <small class="text-muted">12 mins ago</small>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="chat-footer">
+                    <div class="input-group">
+                      <input id="btn-input" type="text" class="form-control input-sm" placeholder="Escribe un mensaje..." />
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat">
+                          Enviar
+                        </button>
+                      </span>
+                    </div>
+
+                    <input type="file" class="filestyle">
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CANVAS -->
+          <div class="col-xs-12 col-sm-9 p0left">
+            <div class="canvas-box">
+              <!-- AQUI VA EL CANVAS - IFRAME - OBJECT -->
+              <p class="lead text-center">
+                El Ayudante aún no se conecta<br>
+                <i class="fa fa-unlink"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN PIZARRA -->  
+
+    <!-- FOOTER PIZARRA -->
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="footer">
+            <li><a href="terminos.html">Términos del servicio</a></li>
+            <li><a href="politicas.html">Políticas de Uso</a></li>
+            <li><a href="ayudantee.html">Sobre Ayudantee</a></li>
+            <li><a href="centro_ayuda.html">Centro de Ayuda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>Ayudantee 2016.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN FOOTER PIZARRA -->
+
+    <!-- MODAL TEXT -->
+    <div class="modal fade" id="modal-text" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <h3 class="p30botom">Agregar texto</h3>
+
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label>Texto</label>
+                        <input type="text" class="form-control input-lg" placeholder="Escribe un texto...">
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="form-group">
+                        <label>Tamaño</label>
+                        <select class="selectpicker" data-width="100%" data-style="btn-default" title="Selecciona un tamaño...">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <div class="form-group">
+                        <label>Color</label>
+                        <div class="text-color input-group colorpicker-component">
+                            <input type="text" value="#0056a2" class="form-control" />
+                            <span class="input-group-addon"><i></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 p30bottom">
+                      <button type="button" class="btn btn-primary">Agregar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CIRCLE -->
+    <div class="modal fade" id="modal-circle" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <h3 class="p30botom">Agregar circulo</h3>
+
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label>Color y opacidad</label>
+                        <div class="text-color input-group colorpicker-component">
+                            <input type="text" value="#0056a2" class="form-control" />
+                            <span class="input-group-addon"><i></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 p30bottom">
+                      <button type="button" class="btn btn-primary">Agregar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- MODAL CLEAN -->
+    <div class="modal fade" id="modal-clean" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <h3 class="p30botom">Se borrarán todos los datos</h3>
+
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label>Deseas continuar?</label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 p30bottom">
+                      <button type="button" class="btn btn-primary">Limpiar pizarra</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL VIDEO -->
+    <div class="modal fade modal-video" id="modal-1" role="dialog">
+      <div class="modal-dialog">  
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="video-call">
+              <video></video>
+              <!-- COLOCAR EL VIDEO ACÁ -->
+            </div>
+
+            <ul class="video-controls">
+              <li>
+                <a href="#" title="Activar camara">
+                  <i class='fa fa-video-camera'></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="end-call" data-dismiss="modal" title="Terminar llamada">
+                  <i class='fa icon-end-call'></i>
+                </a>
+              </li>
+
+              <li class="pull-right">
+                <a href="#" class="modalMinimize">
+                  <i class='fa icon-resize-small'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (requerido)-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- Bootstrap plugins -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/bootstrap-select.min.js"></script>
+    <script src="../js/bootstrap-filestyle.js"></script>
+    <script src="../js/bootstrap-colorpicker.js"></script>
+
+    <script type="text/javascript">
+      // TOOLTIP
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+      // CHRONOMETRO
+      $(document).on('click', '.btn-toggle-timer', function(e) {
+          e.preventDefault();
+          
+          var trigger = $(this);
+          var timer = trigger.parent().find('[name^=timer]');
+          var timeValue = timer.val();
+          
+          timer.toggleClass('running paused');
+          trigger.toggleClass('btn-success').find('i').toggleClass('fa-play-circle fa-pause-circle');
+      });
+
+      jQuery.fn.updateTimer = function() {
+          $(".timer.running").each(function(){
+              
+              var timer = $(this),
+                  timeParts = timer.val().split(':'),
+                  hrs = parseInt(timeParts[0]),
+                  min = parseInt(timeParts[1]),
+                  sec = parseInt(timeParts[2]);
+              
+              if ( sec === 59 ) { 
+                  sec = 0; 
+                  min = min + 1;
+              } else {
+                  sec = sec + 1;
+              }
+              if ( min === 60 ) { 
+                  min = 0;
+                  hrs = hrs + 1;
+              }
+              
+              timer.val(pad(hrs,2)+':'+pad(min,2)+':'+pad(sec,2));
+          });
+      };
+
+      setInterval(function() {
+        $(document).updateTimer();
+      },  1000);
+
+      function pad(number, length) {
+          var str = '' + number;
+          while (str.length < length) {str = '0' + str;}
+          return str;
+      }
+    </script>
+
+    <!-- FILE INPUT -->
+    <script>
+      $(":file").filestyle({
+        input: false,
+        buttonText: 'Adjuntar archivo',
+        buttonName: 'btn-link btn-sm',
+        iconName: "fa fa-paperclip"
+      });
+    </script>
+
+    <!-- MODALS -->
+    <script type="text/javascript">
+      // MODAL TEXTO
+      $("#tool-text").click(function(event){
+        $("#modal-text").modal('show');
+      });
+      // MODAL CIRCULO
+      $("#tool-circle").click(function(event){
+        $("#modal-circle").modal('show');
+      });
+      // MODAL LIMPIAR PIZARRA
+      $("#tool-clean").click(function(event){
+        $("#modal-clean").modal('show');
+      });
+    </script>
+
+    <!-- COLORPICKER -->
+    <script>
+        $(function() {
+            $('.text-color').colorpicker();
+        });
+    </script>
+
+    <!-- CHAT SCROLL BOTTOM -->
+    <script>
+        $(".chat").animate({ scrollTop: $('.chat')[0].scrollHeight}, 1000);
+    </script>
+
+    <!-- MODAL VIDEO -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+          var $content, $modal, $apnData, $modalCon;
+          $content = $(".min");
+
+          //To fire modal
+          $(".mdlFire").click(function(e) {
+              e.preventDefault();
+              var $id = $(this).attr("data-target");
+              $($id).modal({
+                  backdrop: false,
+                  keyboard: false
+              });
+          });
+
+
+          $(".modalMinimize").on("click", function() {
+              $modalCon = $(this).closest(".modal-video").attr("id");
+              $apnData = $(this).closest(".modal-video");
+              $modal = "#" + $modalCon;
+              $(".modal-backdrop").addClass("display-none");
+              $($modal).toggleClass("min");
+              if ($($modal).hasClass("min")) {
+                  $(".minmaxCon").append($apnData);
+                  $(this).find("i").toggleClass('icon-resize-small').toggleClass('icon-resize-full');
+              } else {
+                  $(".container").append($apnData);
+                  $(this).find("i").toggleClass('icon-resize-full').toggleClass('icon-resize-small');
+              };
+          });
+
+          $("button[data-dismiss='modal']").click(function() {
+              $(this).closest(".modal-video").removeClass("min");
+              $(".container").removeClass($apnData);
+              $(this).next('.modalMinimize').find("i").removeClass('fa icon-resize-full').addClass('fa icon-resize-small');
+          });
+
+      });
+    </script>
+  </body>
+</html>

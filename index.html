@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ayudantee</title>
+    <!-- Theme -->
+    <link href="css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-default navbar-fixed-top nav-home">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <a class="navbar-brand" href="../">
+            <img src="img/logo-white.png">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu">          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#registro">Registrarme</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login">Entrar</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="views/blog.html">Blog</a></li>
+                <li><a href="views/ayudantee.html">Sobre Ayudantee</a></li>
+                <li><a href="views/politicas.html">Políticas de Uso</a></li>
+                <li><a href="views/terminos.html">Términos del Servicio</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="views/centro_ayuda.html">Centro de Ayuda</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN HEADER -->
+
+    <!-- PRESENTACION -->
+    <section class="container-fluid search-home">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h1>Recibe clases en línea</h1>
+            <h3><strong>Busca</strong> o <strong>haz una pregunta</strong> para que un ayudante te contácte</h3>
+          </div>
+
+          <div class="col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1 p0right">
+            <select class="selectpicker" data-width="100%" data-style="btn-default btn-lg" data-live-search="true" title="Selecciona un ramo...">
+              <option>Ingles intermedio</option>
+              <option>Bioquimica molecular</option>
+              <option>Física cuántica</option>
+              <option>Aritmetica aplicada</option>
+              <option>Listado de ramos...</option>
+            </select>
+          </div>
+
+          <div class="col-sm-2 p0left p0right">
+            <a href="views/resultado-busqueda.html" class="btn btn-primary btn-lg btn-block">Buscar</a>
+          </div>
+
+          <div class="col-sm-3 p0left">
+            <a href="#" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#pregunta">
+              Hacer pregunta
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN PRESENTACION -->
+
+    <!-- USO -->
+    <section class="container-fluid users-home">
+      <div class="container users-home">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2><strong>Ayudantee</strong> es una herramienta <strong>fácil de usar</strong></h2>
+          </div>
+
+          <div class="col-xs-12 text-center">
+            <!-- Nav tabs -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                  <li role="presentation" class="active">
+                    <a href="#alumnos-tab" aria-controls="alumnos-tab" role="tab" data-toggle="tab">
+                      Alumnos
+                    </a>
+                  </li>
+                  
+                  <li role="presentation">
+                    <a href="#ayudantes-tab" aria-controls="ayudantes-tab" role="tab" data-toggle="tab">
+                      Ayudantes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="alumnos-tab">
+                <div class="row">
+                  <div class="col-sm-4 p0right">
+                    <div class="step-one">
+                      <h1><i class="fa fa-users"></i></h1>
+                      <h3>Pide un ayudante</h3>
+                      <p>Busca un ayudante en el ramo que necesitas o haz una pregunta y un ayudante te contactará.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 p0right p0left">
+                    <div class="step-two">
+                      <h1><i class="fa fa-calendar-check-o"></i></h1>
+                      <h3>Agenda la clase</h3>
+                      <p>Selecciona al ayudante que prefieras y coordina la fecha y hora que más te acomode.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 p0left">
+                    <div class="step-three">
+                      <h1><i class="fa fa-graduation-cap"></i></h1>
+                      <h3>Recibe tu clase</h3>
+                      <p>Finalmente, generamos el medio para que el ayudante pueda realizar una clase online.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <div role="tabpanel" class="tab-pane fade in" id="ayudantes-tab">
+                <div class="row">
+                  <div class="col-sm-4 p0right">
+                    <div class="step-one">
+                      <h1><i class="fa fa-users"></i></h1>
+                      <h3>Pide un ayudante</h3>
+                      <p>Busca un ayudante en el ramo que necesitas o haz una pregunta y un ayudante te contactará.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 p0right p0left">
+                    <div class="step-two">
+                      <h1><i class="fa fa-calendar-check-o"></i></h1>
+                      <h3>Agenda la clase</h3>
+                      <p>Selecciona al ayudante que prefieras y coordina la fecha y hora que más te acomode.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 p0left">
+                    <div class="step-three">
+                      <h1><i class="fa fa-graduation-cap"></i></h1>
+                      <h3>Recibe tu clase</h3>
+                      <p>Finalmente, generamos el medio para que el ayudante pueda realizar una clase online.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="form-group pull-right p50top p50bottom">
+            <a href="#" class="btn btn-primary btn-lg">Buscar ayudante</a>
+            <a href="#" class="btn btn-secondary btn-lg">Crear cuenta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN USO -->
+
+    <!-- EXPERIENCIAS -->
+    <section class="container-fluid experiencias">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>Conoce las <strong>experiencias</strong> de nuestros usuarios</h2>
+        </div>
+          
+        <div class="col-xs-12">
+          <div id="testimonios" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <div class="bg-white">
+                      <div class="row">
+                        <div class="col-sm-4 p0right">
+                          <img src="img/edgar.jpg" class="img-responsive user-avatar img-circle">
+                        </div>
+
+                        <div class="col-sm-8 user-quote p0left">
+                          <blockquote>
+                            <i class="fa fa-quote-left"></i>
+                            Me ha encantado el sistema online
+                            que permite conectarse desde cualquier
+                            parte del mundo, es muy eficiente.
+                            Además el tutor que se contactó conmigo
+                            es de primer nivel. Gracias por la tutoría.
+                          </blockquote>
+                          <p><strong>Edgar Allan Poe</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <div class="bg-white">
+                      <div class="row">
+                        <div class="col-sm-4 p0right">
+                          <img src="img/edgar.jpg" class="img-responsive user-avatar img-circle">
+                        </div>
+
+                        <div class="col-sm-8 user-quote p0left">
+                          <blockquote>
+                            <i class="fa fa-quote-left"></i>
+                            Me ha encantado el sistema online
+                            que permite conectarse desde cualquier
+                            parte del mundo, es muy eficiente.
+                            Además el tutor que se contactó conmigo
+                            es de primer nivel. Gracias por la tutoría.
+                          </blockquote>
+                          <p><strong>Edgar Allan Poe</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#testimonios" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#testimonios" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN EXPERIENCIAS -->
+
+    <!-- BLOG -->
+    <section class="container-fluid blog">
+      <div class="container p50top">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 p30bottom">
+            <h2>
+              Nuestro <strong>Blog</strong> 
+              <a href="#" class="btn btn-secondary btn-lg pull-right">Ir al blog</a>
+            </h2>
+          </div>
+
+          <div class="col-sm-10 col-sm-offset-1 p30bottom">
+            [ Soon Wordpress include content posts (loop/list)... ]
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN BLOG -->
+
+    <!-- PARTNERS -->
+    <section class="container-fluid partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>Nuestros <strong>Partners</strong></h2>
+          </div>
+          
+          <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+            <img src="img/startupchile.png" class="img-responsive">
+          </div>
+
+          <div class="col-xs-6 col-sm-4">
+            <img src="img/corfo.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN PARTNERS -->
+
+    <!-- FOOTER HOME -->
+    <footer class="container-fluid footer-home">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-md-1">
+            <img src="img/isotipo.png">
+          </div>
+
+          <div class="col-sm-10 col-md-7 col-lg-6">
+            <ul class="menu-footer">
+              <li>
+                <a href="views/terminos.html">Términos del servicio</a>
+              </li>
+
+              <li>
+                <a href="views/politicas.html">Políticas de Uso</a>
+              </li>
+
+              <li>
+                <a href="views/ayudantee.cl">Sobre Ayudantee</a>
+              </li>
+
+              <li>
+                <a href="views/centro_ayuda.html">Centro de Ayuda</a>
+              </li>
+
+              <li>
+                <a href="views/blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-2 col-lg-3">
+            <ul class="redes-sociales">
+              <li>
+                <a href="facebook.com"><i class="fa fa-facebook-official"></i></a>
+              </li>
+
+              <li>
+                <a href="twitter.com"><i class="fa fa-twitter"></i></a>
+              </li>
+
+              <li>
+                <a href="linkedin.com"><i class="fa fa-linkedin"></i></a>
+              </li>
+
+              <li>
+                <a href="instagram.com"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-2">
+            <img src="img/security.jpg" class="security-img img-responsive">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN FOOTER HOME -->
+
+    <!-- MODAL LOGIN -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="img/logo-white.png" class="img-responsive">
+          </div>
+
+          <div class="modal-body">
+            <div class="well p15 m15bottom">
+              <!-- CAMBIAR POR CONEXIÓN DE FACEBOOK -->
+              <fb:login-button 
+                appId="768061286667674" 
+                scope="public_profile,email" 
+                id="facebook-login-button">
+              </fb:login-button>
+
+              Entrar con Facebook
+                        
+              <div id="status"></div>
+              <!-- FIN CONEXIÓN FACEBOOK -->
+            </div>
+
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Mantenerme conectado
+                </label>
+              </div>
+              <a href="views/perfil.html" class="btn btn-secondary btn-lg btn-block">Entrar</a>
+            </form>
+
+            <a href="views/change-pass.html" class="btn btn-link btn-block">
+              ¿Olvide mi contraseña?
+            </a>
+          </div>
+
+          <div class="modal-footer">
+            <p class="text-center">
+              ¿Aun no tienes una cuenta?<br>
+              <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#registro">
+                <strong>Registrarme</strong>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN MODAL LOGIN -->
+
+    <!-- MODAL REGISTRO -->
+    <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h3>Registrate en Ayudantee<br>
+                        Y cambia tu forma de aprender</h3>
+                    </div>
+
+                    <div class="col-sm-12">
+                      <div class="well p15 m15bottom">
+                        
+                        <!-- CAMBIAR POR CONEXIÓN DE FACEBOOK -->
+                        <fb:login-button 
+                            appId="768061286667674" 
+                            scope="public_profile,email" 
+                            id="facebook-login-button">
+                        </fb:login-button>
+
+                        Registrate con Facebook
+                        
+                        <div id="status"></div>
+                        <!-- FIN CONEXIÓN FACEBOOK -->
+                        
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" class="form-control" placeholder="Nombre completo...">
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="Correo...">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Fecha de nacimiento</label>
+                        <div class="input-group" role="group">
+                          <select class="selectpicker" title="Día">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                          </select>
+                          <select class="selectpicker" title="Mes">
+                            <option>Enero</option>
+                            <option>Febrero</option>
+                            <option>Maezo</option>
+                          </select>
+                          <input type="text" class="form-control" placeholder="Año">
+                        </div>
+                      </div> 
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Contraseña...">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Repetir contraseña</label>
+                        <input type="password" class="form-control" placeholder="Repetir contraseña...">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="well p15">
+                        <p class="text-muted p0 m0">Los datos no serán compartidos con nadie, te invitamos a ver nuestras <a href="views/politicas.html">Políticas de Uso</a></p>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 p15top">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Acepto los Términos del Servicio
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 p30top p50bottom">
+                      <button type="button" class="btn btn-secondary">Registrarme</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN MODAL REGISTRO -->
+
+    <!-- MODAL PREGUNTA -->
+    <div class="modal fade" id="pregunta" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h3 class="p30bottom">Publica una pregunta<br>Un ayudante se contactará contigo</h3>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label>En que materia?</label>
+                        <select class="selectpicker" data-width="100%" data-style="btn-default" data-live-search="true" title="Selecciona un ramo...">
+                          <option>Ingles intermedio</option>
+                          <option>Bioquimica molecular</option>
+                          <option>Física cuántica</option>
+                          <option>Aritmetica aplicada</option>
+                          <option>Listado de ramos...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label>Para que día?</label>
+                        <div class='input-group date' id='datetimepicker1'>
+                          <input type='text' class="form-control" />
+                          <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label>Cuentanos en que necesitas ayuda</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="well">
+                        <div class="form-group">
+                          <label for="exampleInputFile"><i class="fa fa-file-photo-o"></i> Adjunta un archivo</label>
+                          <input type="file">
+                          <p class="help-block">Puedes incluir imágenes o documentos para complementar tu pregunta, por ejemplo un cuestionario o un mapa.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 p30top p50bottom">
+                      <button type="button" class="btn btn-primary">Publicar pregunta</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN MODAL PREGUNTA -->
+
+    <!-- jQuery (requerido)-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+
+    <!-- Scroll header effect -->
+    <script type="text/javascript">
+      function init() {
+          window.addEventListener('scroll', function(e){
+              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                  shrinkOn = 200,
+                  header = document.querySelector(".nav-home");
+              if (distanceY > shrinkOn) {
+                  classie.add(header,"smaller");
+              } else {
+                  if (classie.has(header,"smaller")) {
+                      classie.remove(header,"smaller");
+                  }
+              }
+          });
+      }
+      window.onload = init();
+    </script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('#datetimepicker1').datetimepicker({
+          inline: false,
+          sideBySide: false,
+          locale: 'es',
+          disabledTimeIntervals: false
+        });
+      });
+    </script>
+
+    <!-- FACEBOOK SDK REVISAR -->
+    <script>
+      // This is called with the results from from FB.getLoginStatus().
+      function statusChangeCallback(response) {
+        console.log('statusChangeCallback');
+        console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+          // Logged into your app and Facebook.
+          testAPI();
+        } else if (response.status === 'not_authorized') {
+          // The person is logged into Facebook, but not your app.
+          document.getElementById('status').innerHTML = 'Please log ' +
+            'into this app.';
+        } else {
+          // The person is not logged into Facebook, so we're not sure if
+          // they are logged into this app or not.
+          document.getElementById('status').innerHTML = 'Please log ' +
+            'into Facebook.';
+        }
+      }
+
+      // This function is called when someone finishes with the Login
+      // Button.  See the onlogin handler attached to it in the sample
+      // code below.
+      function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+        });
+      }
+
+      window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '768061286667674',
+        cookie     : true,  // enable cookies to allow the server to access 
+                            // the session
+        xfbml      : true,  // parse social plugins on this page
+        version    : 'v2.7' // use graph api version 2.5
+      });
+
+      // Now that we've initialized the JavaScript SDK, we call 
+      // FB.getLoginStatus().  This function gets the state of the
+      // person visiting this page and can return one of three states to
+      // the callback you provide.  They can be:
+      //
+      // 1. Logged into your app ('connected')
+      // 2. Logged into Facebook, but not your app ('not_authorized')
+      // 3. Not logged into Facebook and can't tell if they are logged into
+      //    your app or not.
+      //
+      // These three cases are handled in the callback function.
+
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+
+      };
+
+      // Load the SDK asynchronously
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+      // Here we run a very simple test of the Graph API after login is
+      // successful.  See statusChangeCallback() for when this call is made.
+      function testAPI() {
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me', function(response) {
+          console.log('Successful login for: ' + response.name);
+          document.getElementById('status').innerHTML =
+            'Thanks for logging in, ' + response.name + '!';
+        });
+      }
+    </script>
+  </body>
+</html>

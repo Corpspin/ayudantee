@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultado de Búsqueda</title>
+    <!-- Theme -->
+    <link href="../css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../css/star-rating.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-default navbar-fixed-top nav-home smaller">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <a class="navbar-brand" href="../">
+            <img src="../img/logo-white.png">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu">          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#registro">Registrarme</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login">Entrar</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ayudantee.html">Sobre Ayudantee</a></li>
+                <li><a href="politicas.html">Políticas de Uso</a></li>
+                <li><a href="terminos.html">Términos del Servicio</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="centro_ayuda.html">Centro de Ayuda</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN HEADER -->
+
+    <!-- PAGE -->
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12 search-inner">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1 p0right">
+              <select class="selectpicker" data-width="100%" data-style="btn-default" data-live-search="true" title="Selecciona un ramo...">
+                <option>Ingles intermedio</option>
+                <option>Bioquimica molecular</option>
+                <option>Física cuántica</option>
+                <option>Aritmetica aplicada</option>
+                <option>Listado de ramos...</option>
+              </select>
+            </div>
+
+            <div class="col-sm-2 p0left p0right">
+              <a href="views/resultado-busqueda.html" class="btn btn-primary btn-block">Buscar</a>
+            </div>
+
+            <div class="col-sm-3 p0left">
+              <a href="#" class="btn btn-secondary btn-block">Hacer pregunta</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <!-- FIN PAGE -->
+
+    <section class="container search-results">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Búsqueda en ramo <strong>Ingles</strong></h4>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="alert alert-success" role="alert">
+            Tu clase a sido pedida a <strong>Edgar Allan Poe</strong>.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- CAJAS DE AYUDANTES - RESULTADO -->
+        <div class="col-xs-12 col-sm-6 col-md-4 box-search">
+          <div class="well">
+            <div class="bg-gray-lighter">
+              <div class="row">
+                <div class="col-xs-5 p0right-all">
+                  <img src="../img/edgar.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-xs-7 p0left-all">
+                  <div class="price">
+                    <p>
+                      $15.000<br>
+                      <small>CLP Hora</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-7 p0left">
+                  <div class="evaluation">
+                    <input id="star-rating" name="input-name" type="number" class="rating">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 mh250">
+                <h2>Edgar Allan Poe</h2>
+                <p>
+                  <strong>Disponibilidad</strong><br>
+                  Lunes a Viernes 11:30 a 14:00 - 20:00 a 23:00
+                </p>
+
+                <p>
+                  <strong>Materias</strong><br>
+                  <span class="label label-primary">Ingles</span>
+                  <span class="label label-primary">Matemáticas</span>
+                  <span class="label label-primary">Fisica Molecular</span>
+                  <span class="label label-primary">Lenguas Romances</span>
+                </p>
+
+                <p>
+                  <strong>Idioma</strong><br>
+                  <span class="label label-default">Ingles</span>
+                  <span class="label label-default">Español</span>
+                  <span class="label label-default">Portugués</span>
+                </p>
+              </div>
+
+              <div class="col-xs-12">
+                <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contactar-ayudante">
+                  Contactar Ayudante
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAJAS REPETIDAS PARA LA MAQUETA -->
+        <div class="col-xs-12 col-sm-6 col-md-4 box-search">
+          <div class="well">
+            <div class="bg-gray-lighter">
+              <div class="row">
+                <div class="col-xs-5 p0right-all">
+                  <img src="../img/edgar.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-xs-7 p0left-all">
+                  <div class="price">
+                    <p>
+                      $15.000<br>
+                      <small>CLP Hora</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-7 p0left">
+                  <div class="evaluation">
+                    <input id="star-rating" name="input-name" type="number" class="rating">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 mh250">
+                <h2>Edgar Allan Poe</h2>
+                <p>
+                  <strong>Disponibilidad</strong><br>
+                  Lunes a Viernes 11:30 a 14:00 - 20:00 a 23:00
+                </p>
+
+                <p>
+                  <strong>Materias</strong><br>
+                  <span class="label label-primary">Ingles</span>
+                  <span class="label label-primary">Matemáticas</span>
+                  <span class="label label-primary">Fisica Molecular</span>
+                  <span class="label label-primary">Lenguas Romances</span>
+                </p>
+
+                <p>
+                  <strong>Idioma</strong><br>
+                  <span class="label label-default">Ingles</span>
+                  <span class="label label-default">Español</span>
+                  <span class="label label-default">Portugués</span>
+                </p>
+              </div>
+
+              <div class="col-xs-12">
+                <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contactar-ayudante">
+                  Contactar Ayudante
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 box-search">
+          <div class="well">
+            <div class="bg-gray-lighter">
+              <div class="row">
+                <div class="col-xs-5 p0right-all">
+                  <img src="../img/edgar.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-xs-7 p0left-all">
+                  <div class="price">
+                    <p>
+                      $15.000<br>
+                      <small>CLP Hora</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-7 p0left">
+                  <div class="evaluation">
+                    <input id="star-rating" name="input-name" type="number" class="rating">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 mh250">
+                <h2>Edgar Allan Poe</h2>
+                <p>
+                  <strong>Disponibilidad</strong><br>
+                  Lunes a Viernes 11:30 a 14:00 - 20:00 a 23:00
+                </p>
+
+                <p>
+                  <strong>Materias</strong><br>
+                  <span class="label label-primary">Ingles</span>
+                  <span class="label label-primary">Matemáticas</span>
+                  <span class="label label-primary">Fisica Molecular</span>
+                  <span class="label label-primary">Lenguas Romances</span>
+                </p>
+
+                <p>
+                  <strong>Idioma</strong><br>
+                  <span class="label label-default">Ingles</span>
+                  <span class="label label-default">Español</span>
+                  <span class="label label-default">Portugués</span>
+                </p>
+              </div>
+
+              <div class="col-xs-12">
+                <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contactar-ayudante">
+                  Contactar Ayudante
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 box-search">
+          <div class="well">
+            <div class="bg-gray-lighter">
+              <div class="row">
+                <div class="col-xs-5 p0right-all">
+                  <img src="../img/edgar.jpg" class="img-responsive">
+                </div>
+
+                <div class="col-xs-7 p0left-all">
+                  <div class="price">
+                    <p>
+                      $15.000<br>
+                      <small>CLP Hora</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-7 p0left">
+                  <div class="evaluation">
+                    <input id="star-rating" name="input-name" type="number" class="rating" showCaption="false">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 mh250">
+                <h2>Edgar Allan Poe</h2>
+                <p>
+                  <strong>Disponibilidad</strong><br>
+                  Lunes a Viernes 11:30 a 14:00 - 20:00 a 23:00
+                </p>
+
+                <p>
+                  <strong>Materias</strong><br>
+                  <span class="label label-primary">Ingles</span>
+                  <span class="label label-primary">Matemáticas</span>
+                  <span class="label label-primary">Fisica Molecular</span>
+                  <span class="label label-primary">Lenguas Romances</span>
+                </p>
+
+                <p>
+                  <strong>Idioma</strong><br>
+                  <span class="label label-default">Ingles</span>
+                  <span class="label label-default">Español</span>
+                  <span class="label label-default">Portugués</span>
+                </p>
+              </div>
+
+              <div class="col-xs-12">
+                <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#contactar-ayudante">
+                  Contactar Ayudante
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIN CAJAS DE AYUDANTES - RESULTADO -->
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12 panel panel-default text-center p30">
+            <p class="lead">
+              ¿No encontraste ayuda?<br>
+              Buscaremos ayudantes en la materia que necesites
+            </p>
+            <a href="pregunta.html" class="btn btn-secondary">Hacer pregunta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER HOME -->
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="footer">
+            <li><a href="terminos.html">Términos del servicio</a></li>
+            <li><a href="politicas.html">Políticas de Uso</a></li>
+            <li><a href="ayudantee.html">Sobre Ayudantee</a></li>
+            <li><a href="centro_ayuda.html">Centro de Ayuda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>Ayudantee 2016.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN FOOTER HOME -->
+
+    <!-- MODAL CONTACTAR AYUDANTE -->
+    <div class="modal fade" id="contactar-ayudante" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body p0">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-7 p0right">
+                <div class="calendar">
+                  <h3 class="text-center">Selecciona el día y la hora</h3>
+                  <div class="row">
+                  <div class="col-xs-12">
+                  <div id="datetimepicker12" class="datetimepicker"></div>
+                  </div>
+
+                  <div class="col-xs-12">
+                  <form class="p30">
+                    <div class="form-group">
+                      <label>Horario <small>Debes añadir al menos una fecha</small></label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="18:00 a 19:00 - 12/09/2016">
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button">Agregar clase</button>
+                        </span>
+                      </div><!-- /input-group -->
+
+                      <table class="table table-result-calendar">                        
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>18:00 a 19:00 - 12/09/2016</td>
+                            <td class="text-right"><a href="#"><i class="fa fa-close"></i></a></td>
+                          </tr>
+
+                          <tr>
+                            <td>1</td>
+                            <td>18:00 a 19:00 - 12/09/2016</td>
+                            <td class="text-right"><a href="#"><i class="fa fa-close"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Invitar usuarios <small>Puedes invitar hasta 10 alumnos</small></label>
+                      <input type="text" class="form-control" placeholder="Correos separados por coma...">
+                    </div>
+                  </form>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-5 box-search p0left">
+                <div class="well">
+                  <div class="bg-gray-lighter">
+                    <div class="row">
+                      <div class="col-xs-4 p0right-all">
+                        <img src="../img/edgar.jpg" class="img-responsive">
+                      </div>
+
+                      <div class="col-xs-8 p0left-all">
+                        <div class="price">
+                          <p>
+                            $15.000<br>
+                            <small>CLP Hora</small>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12">
+                        <div class="evaluation">
+                          <input id="star-rating" name="input-name" type="number" class="rating">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 mh270">
+                      <h2>Edgar Allan Poe</h2>
+                      <p>
+                        Soy profesor de literatura en PUCV, Doctor en Ciencias del Lenguaje y Licenciado en Física Molecular, este parrafo corresponde a la biografía del ayudante.
+                      </p>
+                      
+                      <p>
+                        <strong>Disponibilidad</strong><br>
+                        Lunes a Viernes 11:30 a 14:00 - 20:00 a 23:00
+                      </p>
+
+                      <p>
+                        <strong>Materias</strong><br>
+                        <span class="label label-primary">Ingles</span>
+                        <span class="label label-primary">Fisica Molecular</span>
+                        <span class="label label-primary">Lenguas Romances</span>
+                      </p>
+
+                      <p>
+                        <strong>Idioma</strong><br>
+                        <span class="label label-default">Ingles</span>
+                        <span class="label label-default">Español</span>
+                        <span class="label label-default">Portugués</span>
+                      </p>
+
+                      <div class="btn-box">
+                        <button type="button" class="btn btn-secondary btn-block btn-lg" data-dismiss="modal">
+                          Pedir hora
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN MODAL CONTACTAR AYUDANTE -->
+
+    <!-- jQuery (requerido)-->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap plugins -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/bootstrap-select.js"></script> 
+    <script src="../js/moment-with-locales.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.js"></script>
+    <script src="../js/star-rating.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker12').datetimepicker({
+                inline: true,
+                sideBySide: true,
+                locale: 'es',
+                disabledTimeIntervals: false
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+      $('.rating').rating({
+        min: 1,
+        max: 5,
+        'showCaption':false,
+        'showClear':false
+      });
+    </script>
+  </body>
+</html>

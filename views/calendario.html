@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendario</title>
+    <!-- Theme -->
+    <link href="../css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../css/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="../css/star-rating.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-default navbar-fixed-top nav-home smaller">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <a class="navbar-brand" href="../">
+            <img src="../img/logo-white.png">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu">          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="clases.html">Mis Clases</a></li>
+            <li><a href="mensajes.html">Mensajes <span class="badge label-danger">14</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="../img/edgar.jpg" class="nav-avatar">
+                Edgar <i class="fa fa-caret-down"></i>
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="mensajes.html">Mensajes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="centro_ayuda.html">Centro de ayuda</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="../">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN HEADER -->
+
+    <!-- PAGE -->
+    <section class="container perfil">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 sidebar">
+          <div class="sidebar">
+            <div class="avatar">
+              <img src="../img/edgar.jpg" class="img-responsive img-circle">
+            </div>
+
+            <ul class="menu-user">
+              <li>
+                <a href="perfil.html">
+                  <span class="hidden-xs">Perfil</span> <i class="fa fa-user fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="pagos.html">
+                  <span class="hidden-xs">Pagos</span> <i class="fa fa-credit-card fa-fw"></i>
+                </a>
+              </li>
+              
+              <li>
+                <a href="calendario.html" class="active">
+                  <span class="hidden-xs">Calendario</span> <i class="fa fa-calendar-plus-o fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="clases.html">
+                  <span class="hidden-xs">Mis Clases</span> <i class="fa fa-graduation-cap fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="pedidos.html">
+                  <span class="hidden-xs">Mis Preguntas</span> <i class="fa fa-comment fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="propuestas.html">
+                  <span class="hidden-xs">Mis Propuestas</span> <i class="fa fa-file fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="mensajes.html">
+                  <span class="hidden-xs">Mensajes</span> <i class="fa fa-envelope-o fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 page p0left-all p0right-all">
+          <h3>
+            Mi <strong>Calendario</strong>
+          </h3>
+
+          <div class="content-page">
+            <div class="myCalendar">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 p0right">
+                  <div class="lista-cursos">
+                    <h1>30 <small>Martes</small></h1>
+
+                    <ul>
+                      <li>
+                        <p class="ramo">
+                          Lenguas Romances 
+                          <span class="hora">13:00</span>
+                          <br>
+                          <small>Ayudante <strong>William Shakespeare</strong></small>
+                        </p>
+                      </li>
+
+                      <li>
+                        <p class="ramo">
+                          Lenguas Romances 
+                          <span class="hora">21:00</span>
+                          <br>
+                          <small>Ayudante <strong>William Shakespeare</strong></small>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="calendar-box">
+                    <div id="datetimepicker12"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4>Clases recibidas</h4>
+            <div class="table-responsive">
+              <table id="example" class="table">
+                <thead>
+                  <tr>
+                    <th>Alumno</th>
+                    <th>Curso</th>
+                    <th>Estado</th>
+                    <th class="text-right">Evalúa</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td class="text-right">
+                      <div class="evaluation">
+                        <input id="star-rating" name="input-name" type="number" class="rating">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Garrett Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td class="text-right">
+                      <div class="evaluation">
+                        <input id="star-rating" name="input-name" type="number" class="rating">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td class="text-right">
+                      <div class="evaluation">
+                        <input id="star-rating" name="input-name" type="number" class="rating">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Cedric Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td class="text-right">
+                      <div class="evaluation">
+                        <input id="star-rating" name="input-name" type="number" class="rating">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td class="text-right">
+                      <div class="evaluation">
+                        <input id="star-rating" name="input-name" type="number" class="rating">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN PAGE -->    
+
+    <!-- FOOTER HOME -->
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="footer">
+            <li><a href="terminos.html">Términos del servicio</a></li>
+            <li><a href="politicas.html">Políticas de Uso</a></li>
+            <li><a href="ayudantee.html">Sobre Ayudantee</a></li>
+            <li><a href="centro_ayuda.html">Centro de Ayuda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>Ayudantee 2016.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN FOOTER HOME -->
+
+    <!-- jQuery (requerido)-->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap plugins -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/bootstrap-select.min.js"></script> 
+    <script src="../js/jquery.dataTables.js"></script> 
+    <script src="../js/dataTables.bootstrap.js"></script>
+    <script src="../js/star-rating.min.js"></script>
+    <script src="../js/moment-with-locales.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker12').datetimepicker({
+                inline: true,
+                sideBySide: false,
+                locale: 'es',
+                disabledTimeIntervals: false,
+                format: 'DD/MM/YYYY'
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+      $('.rating').rating({
+        min: 1,
+        max: 5,
+        size: 'xs',
+        'showCaption':false,
+        'showClear':false
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#example').DataTable( {
+          "ordering": false,
+          "info":     false,
+          "language": {
+            "lengthMenu": "Mostrar _MENU_",
+            "zeroRecords": "<p class='p30'>No existen registros</p>",
+            "infoEmpty": "<p class='p30'>No existen registros</p>",
+            "infoFiltered": "(filtered from _MAX_ total records)"
+          },
+          "oLanguage": {
+            "oPaginate": {
+              "sNext": "<i class='fa fa-chevron-right'></i>",
+              "sPrevious": "<i class='fa fa-chevron-left'></i>"
+            }
+          }
+        });
+      });
+    </script> 
+  </body>
+</html>

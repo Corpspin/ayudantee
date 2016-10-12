@@ -1,0 +1,8 @@
+
+.icon-circle:before { content: '\e800'; } /* '' */
+.icon-end-call:before { content: '\e801'; } /* '' */
+.icon-curve:before { content: '\e802'; } /* '' */
+.icon-screen:before { content: '\e803'; } /* '' */
+.icon-rect-line:before { content: '\e804'; } /* '' */
+.icon-resize-small:before { content: '\e805'; } /* '' */
+.icon-resize-full:before { content: '\e806'; } /* '' */

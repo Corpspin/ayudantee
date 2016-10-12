@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil</title>
+    <!-- Theme -->
+    <link href="../css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-default navbar-fixed-top nav-home smaller">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <a class="navbar-brand" href="../">
+            <img src="../img/logo-white.png">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu">          
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" data-toggle="modal" data-target="#registro-ayudante" class="btn btn-header">
+                ¿Quieres ser Ayudante?
+              </a>
+            </li>
+            <li><a href="clases.html">Mis Clases</a></li>
+            <li><a href="mensajes.html">Mensajes <span class="badge label-danger">14</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="../img/edgar.jpg" class="nav-avatar">
+                Edgar <i class="fa fa-caret-down"></i>
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="mensajes.html">Mensajes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="centro_ayuda.html">Centro de ayuda</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="../">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN HEADER -->
+
+    <!-- PAGE -->
+    <section class="container perfil">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 sidebar">
+          <div class="sidebar">
+            <div class="avatar">
+              <img src="../img/edgar.jpg" class="img-responsive img-circle">
+            </div>
+
+            <ul class="menu-user">
+              <li>
+                <a href="perfil.html" class="active">
+                  <span class="hidden-xs">Perfil</span> <i class="fa fa-user fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="pagos.html">
+                  <span class="hidden-xs">Pagos</span> <i class="fa fa-credit-card fa-fw"></i>
+                </a>
+              </li>
+              
+              <li>
+                <a href="calendario.html">
+                  <span class="hidden-xs">Calendario</span> <i class="fa fa-calendar-plus-o fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="clases.html">
+                  <span class="hidden-xs">Mis Clases</span> <i class="fa fa-graduation-cap fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="pedidos.html">
+                  <span class="hidden-xs">Mis Preguntas</span> <i class="fa fa-comment fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="propuestas.html">
+                  <span class="hidden-xs">Mis Propuestas</span> <i class="fa fa-file fa-fw"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="mensajes.html">
+                  <span class="hidden-xs">Mensajes</span> <i class="fa fa-envelope-o fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 page p0left-all p0right-all">
+          <h3>
+            Mi <strong>Perfil</strong> 
+            <a href="editar-perfil.html" class="btn btn-primary pull-right">Editar perfil</a>
+          </h3>
+
+          <div class="content-page">
+            <h4>Mis Datos</h4>
+            <form class="well">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>Nombre</label>
+                    <p class="form-control-static">Edgar Allan Poe</p>
+                    <!--input type="text" class="form-control" placeholder="Edgar Allan Poe"-->
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>Rut</label>
+                      <p class="form-control-static">15757916-9</p>
+                      <!--input type="text" class="form-control" placeholder="15757916-9"-->
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>Correo</label>
+                    <p class="form-control-static">edgarallanpoe@gmail.com</p>
+                    <!--input type="mail" class="form-control" placeholder="edgarallanpoe@gmail.com"-->
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>Nacionalidad</label>
+                    <p class="form-control-static">Chileno</p>
+                    <!--input type="text" class="form-control" placeholder="Chileno..."-->
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>Teléfono</label>
+                    <p class="form-control-static">+56 9 66552312</p>
+                    <!--input type="text" class="form-control" placeholder="+56 9 66552312"-->
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>Idiomas</label>
+                    <p class="form-control-static">Ingles, Español, Portugues</p>
+                    <!--select class="selectpicker" multiple title="Ingles, Español, Portugues" data-width="100%">
+                      <option>Ingles</option>
+                      <option>Francés</option>
+                      <option>Español</option>
+                      <option>Aleman</option>
+                      <option>Chino Mandarín</option>
+                      <option>Esperanto</option>
+                      <option>Portugues</option>
+                    </select-->
+                  </div>
+                </div>
+
+              </div>
+            </form>
+
+            <h4>Biografía</h4>
+            <form>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <p class="form-control-static">Soy profesor de literatura en PUCV, Doctor en Ciencias del Lenguaje y Licenciado en Física Molecular, este parrafo corresponde a la biografía del ayudante.</p>
+                    <!--textarea class="form-control" rows="3"></textarea-->
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <h4>Mis Ramos</h4>
+            <form>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label>Ramos</label>
+                    <p class="form-control-static">Matematicas, Lenguas Romances, Fisica Molecular</p>
+                    <!--select class="selectpicker" multiple title="Ingles, Español, Portugues" data-width="100%" data-live-search="true">
+                      <option>Ingles</option>
+                      <option>Francés</option>
+                      <option>Español</option>
+                      <option>Aleman</option>
+                      <option>Chino Mandarín</option>
+                      <option>Esperanto</option>
+                      <option>Portugues</option>
+                    </select-->
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <h4>Mis Horarios</h4>
+            <form class="well">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label>Disponibilidad</label>
+                    <p class="form-control-static">Lunes a Viernes de 10:00 a 12:00 y de 19:00 a 22:00</p>
+                    <!--textarea class="form-control" rows="3"></textarea-->
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN PAGE -->    
+
+    <!-- FOOTER HOME -->
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="footer">
+            <li><a href="terminos.html">Términos del servicio</a></li>
+            <li><a href="politicas.html">Políticas de Uso</a></li>
+            <li><a href="ayudantee.html">Sobre Ayudantee</a></li>
+            <li><a href="centro_ayuda.html">Centro de Ayuda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>Ayudantee 2016.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FIN FOOTER HOME -->
+
+    <!-- MODAL PREGUNTA -->
+    <div class="modal fade" id="registro-ayudante" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h3>¿Eres ayudante?<br>Tenemos una oferta para ti</h3>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <p class="lead">Aumenta tus ingresos y ayuda a cientos de estudiantes a mejorar su rendimiento, ingresa los siguientes datos y nos contactaremos contigo</p>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label>En que materias quieres ofrecer ayuda?</label>
+                        <select class="selectpicker" data-width="100%" data-style="btn-default" data-live-search="true" title="Selecciona un ramo..." multiple>
+                          <option>Ingles intermedio</option>
+                          <option>Bioquimica molecular</option>
+                          <option>Física cuántica</option>
+                          <option>Aritmetica aplicada</option>
+                          <option>Listado de ramos...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label>Cuentanos sobre tus experienacias como ayudante</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 p30top p50bottom">
+                      <button type="button" class="btn btn-primary">Postular a Ayudantee</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN MODAL PREGUNTA -->
+
+    <!-- jQuery (requerido)-->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap plugins -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/bootstrap-select.min.js"></script>    
+  </body>
+</html>
