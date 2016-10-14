@@ -263,15 +263,17 @@
     <section class="container-fluid blog">
       <div class="container p50top">
         <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 p30bottom">
+          <div class="col-sm-12 p30bottom">
             <h2>
               Nuestro <strong>Blog</strong> 
-              <a href="#" class="btn btn-secondary btn-lg pull-right">Ir al blog</a>
+              <!--//feed blog Wordpress - change URL blog-->
+              <a href="http://floristeady.com/ayudantee/blog/" class="btn btn-secondary btn-lg pull-right">Ir al blog</a>
             </h2>
           </div>
 
-          <div class="col-sm-10 col-sm-offset-1 p30bottom">
-            [ Soon Wordpress include content posts (loop/list)... ]
+          <div class="col-sm-12">
+           
+            <div id="rss-feeds"></div>
           </div>
         </div>
       </div>
@@ -597,6 +599,8 @@
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/moment-with-locales.min.js"></script>
     <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+     <script src="js/jquery.rss.js"></script>
 
     <!-- Scroll header effect -->
     <script type="text/javascript">
@@ -709,5 +713,23 @@
         });
       }
     </script>
+    
+    
+    <script type="text/javascript">
+	//feed blog Wordpress     
+      jQuery(function($) {
+        $("#rss-feeds").rss("http://floristeady.com/ayudantee/blog/feed/", {
+          entryTemplate: '<li class="post col-sm-4"><div class="inner"><a href="{url}" title="Ir al artículo" class="img"><img width="380" alt="{title}" src="{teaserImageUrl}"></a><h2><a href="{url}">{title}</h2></a><p>{shortBody}</p></div></li>',
+          limit: 3,
+          tokens: {
+            year: function(entry, tokens) {
+              return new Date(entry.publishedDate).getFullYear()
+            }
+           
+          }
+        })
+      })	    
+    </script>
+    
   </body>
 </html>

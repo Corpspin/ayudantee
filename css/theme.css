@@ -9159,3 +9159,45 @@ label {
   margin: 5px 0 !important;
   padding: 0;
 }
+
+#rss-feeds ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+#rss-feeds li {
+	list-style: none;
+	margin: 0;
+}
+
+.post .inner {
+    border: 1px solid #ebf0f4;
+    margin-bottom: 30px;
+    min-height: 350px;
+}
+
+.post h2 {
+	font-size: 1.3em;
+	padding: 5px 15px;
+	font-weight: 500;
+}
+
+.post .img {
+	overflow: hidden;
+	max-height: 200px;
+	display: block;
+}
+
+.post p {
+	padding: 0 15px;
+	color: #0056a2;
+}
+
+.post:hover img {
+	opacity: .8;
+}
+
+.post:hover p, .post:hover a {
+	color: #002c52;
+}
